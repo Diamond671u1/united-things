@@ -1,0 +1,18 @@
+{
+  "name": "United things - B2B Marketplace",
+  "short_name": "United things",
+  "description": "A comprehensive B2B marketplace for hotels, corporates, parks, metro stations, airports, and hospitals. We supply janitorial items, stationery, packaging, food & beverage, and more.",
+  "start_url": "/",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#F5F7FA",
+  "theme_color": "#0D47A1",
+  "icons": [
+    {
+      "src": "/icon.svg",
+      "sizes": "192x192 512x512",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}
