@@ -1,3 +1,6 @@
+// FIX: Add reference to vite/client to get correct typings for import.meta.env
+/// <reference types="vite/client" />
+
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import App from './App';
@@ -6,7 +9,8 @@ import './index.css';
 
 if ('serviceWorker' in navigator) {
   window.addEventListener('load', () => {
-    navigator.serviceWorker.register('/sw.js').then(registration => {
+    // Use BASE_URL to construct the correct path for the service worker
+    navigator.serviceWorker.register(`${import.meta.env.BASE_URL}sw.js`).then(registration => {
       console.log('ServiceWorker registration successful with scope: ', registration.scope);
     }).catch(error => {
       console.log('ServiceWorker registration failed: ', error);

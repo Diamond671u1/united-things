@@ -61,7 +61,7 @@ const App: React.FC = () => {
         <div className="container mx-auto px-6">
           <h2 className="text-3xl font-bold text-center mb-2">Our Categories</h2>
           <p className="text-center text-gray-600 mb-10">Supplying all your business needs under one roof.</p>
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
             {CATEGORIES.map(category => (
               <CategoryCard key={category.name} category={category} onClick={handleNavigate} />
             ))}
